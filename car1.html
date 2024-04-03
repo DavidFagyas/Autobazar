@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Škoda Octavia Combi 3 facelift </title>
+    <link rel="stylesheet" href="Style1.css">
+    
+</head>
+<header>
+    <a href="index.html">
+        <img src="logo .jpg"  height="75px" width="105px" >
+      </a>
+
+        <h1>Škoda Octavia Combi 3 facelift</h1>
+<nav style="top: auto;">
+    <ul class="navbar-nav">
+        <a class="nav-link" href="index.html">Domov</a></li>
+        <a class="nav-link" href="dostupne-auta.html">Dostupné autá</a></li>
+        <a class="nav-link" href="onas.html">O nás</a></li>
+        <a class="nav-link" href="kontakt.html">KONTAKT</a></li>
+    </ul>
+</nav>
+</header>
+<body>
+<br>
+<br>
+<br>
+<div id="slideshow-container">
+    <div class="slide">
+        <img src="Auta/car1/car1.jpg" alt="Image 1">
+    </div>
+    <div class="slide">
+        <img src="Auta/car1/img2.jpg" alt="Image 2">
+    </div>
+    <div class="slide">
+        <img src="Auta/car1/img3.jpg" alt="Image 2">
+    </div>
+    
+
+
+
+    <a class="arrow prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="arrow next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+
+    
+    <g>Popis</g><br>
+
+
+    <table>
+        <tr>
+            <td>Značka</td>
+            <td>Škoda</td>
+        </tr>
+        <tr>
+            <td>Model</td>
+            <td>Octavia 3</td>
+        </tr>
+        <tr>
+            <td>Verzia</td>
+            <td>Combi</td>
+        </tr>
+        <tr>
+            <td>Najazdené Kilometre</td>
+            <td>139000km</td>
+        </tr>
+        <tr>
+            <td>Kombinovaná spotreba </td>
+            <td>4.9l</td>
+        </tr>
+        <tr>
+            <td>VIN</td>
+            <td> VSSZZZ5FZFR051567</td>
+        </tr>
+        <tr>
+            <td>Motor(CM3)</td>
+            <td>1968</td>
+        </tr>
+        <tr>
+            <td>Prevodovka</td>
+            <td>6-st.automatická</td>
+        </tr>
+        <tr>
+            <td>Paliva</td>
+            <td>Diesel</td>
+        </tr>
+        <tr>
+            <td>Sedadlá</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Rok výroby </td>
+            <td>10/2019</td>
+        </tr>
+        <tr>
+            <td>Cena</td>
+            <td>12500€</td>
+        </tr>
+        <tr>
+            <td>Tel.císlo</td>
+            <td>+421 956 982 252</td>
+        </tr>
+
+    </table>
+    
+</head>
+<body>
+
+
+
+    <script>
+  
+        let currentSlide = 1;
+        showSlide(currentSlide);
+    
+        function changeSlide(n) {
+            showSlide(currentSlide += n);
+        }
+    
+        function showSlide(n) {
+            let slides = document.getElementsByClassName("slide");
+    
+            if (n > slides.length) {
+                currentSlide = 1;
+            }
+    
+            if (n < 1) {
+                currentSlide = slides.length;
+            }
+    
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+    
+            slides[currentSlide - 1].style.display = "block";
+        }  
+        showSlides();
+        document.getElementById('goToTop').addEventListener('click', scrollToTop);
+    function scrollToTop() {
+        window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
+        
+    </script>
+    
+    <footer>
+             
+    <div class="col-25">
+        <h3>Tu sa nachádzame</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10614.839764656655!2d18.0910518!3d48.3084298!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xba2bad032d96b960!2sFakulta%20pr%C3%ADrodn%C3%BDch%20vied%20a%20informatiky!5e0!3m2!1ssk!2ssk!4v1669307792855!5m2!1ssk!2ssk" width="650" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+      </div>
+            <div class="footermenu2">
+                <h3 class="footernadpis">SLEDUJTE NÁS!</h3>
+                <div class="footerikony">
+                    <o href="https://www.facebook.com/david.fagyas.3"><i class="fab fa-facebook-f"></i></o>
+                    <o href="https://www.instagram.com/_15david_/"><i class="fab fa-instagram"></i></o>  
+                    
+                </div> 
+            </div>
+            <h3 class="footernadpis">Pripojte sa k Newsletteru</h3>  <br>
+            <br>
+            <br>
+
+
+
+            <br>
+                    <div class="footermail"> <br>
+                        <input type="email" placeholder="ZADAJTE VÁŠ EMAIL"  class="footerinput"> <br>
+                        <button class="footerbtn">ODOSLAŤ</button>
+                    </div>
+                </div>
+                <div class="footermenu2">
+        </div>
+    </footer>
+    <footer>
+        <div class="footermenu2">
+        <span class="autor">&copy;Dávid Fagyas, 2023.</span>
+    </div>
+
+    </footer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <div id="goToTop" class="hore" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+</body>
+</html>
